@@ -1,10 +1,10 @@
 import React from 'react'
-import DataVisualizationRuleBuilder from './pages/DataVisualizationRuleBuilder'
+import DataVisualizationWithCode from './pages/DataVisualizationWithCode'
 
 export default function App() {
   return (
     <div className="app">
-      <DataVisualizationRuleBuilder />
+      <DataVisualizationWithCode />
     </div>
   )
 }

@@ -50,3 +50,15 @@ body{
 .add-button{background:#0ea5a4;color:#fff;border:0;padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600}
 .add-button:hover{opacity:0.95}
 
+/* Input code / code block component */
+.input-code{display:flex;flex-direction:column;gap:8px}
+.input-code .label-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.input-code .label{font-weight:600;font-size:16px;color:var(--text-primary);margin:0}
+.input-code .description{font-size:12px;color:var(--text-secondary)}
+.input-code .copy-button{background:transparent;border:0;color:var(--text-primary);font-weight:600;cursor:pointer}
+.input-code .code-container{display:flex;border:1px solid var(--border-enabled);background:var(--surface);border-radius:4px;overflow:hidden}
+.input-code .code-index{background:var(--surface);border-right:1px solid var(--border-divider);width:40px;padding:6px 4px;font-family:monospace;color:var(--text-secondary);font-size:13px}
+.input-code .code-content{padding:8px 10px;font-family:Courier, monospace;font-size:13px;color:var(--text-primary);white-space:pre-wrap;overflow:auto;width:100%}
+.input-code .code-line-index{display:flex;flex-direction:column;gap:6px;padding:6px 4px;font-family:monospace;color:var(--text-secondary);font-size:12px}
+.input-code .code-copy-area{display:flex;align-items:flex-end;padding:6px 6px}
+
