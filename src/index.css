@@ -62,3 +62,26 @@ body{
 .input-code .code-line-index{display:flex;flex-direction:column;gap:6px;padding:6px 4px;font-family:monospace;color:var(--text-secondary);font-size:12px}
 .input-code .code-copy-area{display:flex;align-items:flex-end;padding:6px 6px}
 
+/* File Picker component */
+.file-picker{display:flex;flex-direction:column;gap:16px}
+.file-picker-header{display:flex;flex-direction:column;gap:4px}
+.file-picker-label{font-weight:600;font-size:16px;color:var(--text-primary);margin:0}
+.file-picker-description{font-size:12px;color:var(--text-secondary);margin:0}
+.file-picker-dropzone{display:flex;align-items:center;justify-content:center;border:2px dashed var(--border-enabled);background:var(--surface);border-radius:8px;padding:24px;cursor:pointer;transition:all 0.2s ease}
+.file-picker-dropzone.active{background:rgba(22,21,19,0.16)}
+.file-picker-dropzone-content{display:flex;flex-direction:column;gap:4px;text-align:center}
+.file-picker-dropzone-title{font-weight:700;font-size:20px;line-height:28px;color:var(--text-primary);margin:0}
+.file-picker-dropzone-text{font-size:13.75px;color:var(--text-secondary);margin:0}
+.file-picker-files{display:flex;flex-direction:column;gap:16px}
+.file-picker-files-header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.file-picker-files-title{font-weight:700;font-size:20px;line-height:28px;color:var(--text-primary);margin:0}
+.file-picker-clear-btn{background:transparent;border:0;color:var(--text-primary);font-weight:600;cursor:pointer;font-size:13.75px;padding:8px 12px}
+.file-picker-clear-btn:hover{opacity:0.8}
+.file-picker-files-list{display:flex;flex-direction:column;gap:0}
+.file-picker-file-item{display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--border-divider)}
+.file-picker-file-name{font-weight:600;font-size:16px;color:var(--text-primary);width:240px}
+.file-picker-file-size{font-size:16px;color:var(--text-primary);flex:1}
+.file-picker-file-actions{display:flex;gap:16px;align-items:center;justify-content:flex-end;min-width:120px}
+.file-picker-delete-btn{background:transparent;border:0;color:var(--text-primary);cursor:pointer;font-size:18px;padding:8px;width:36px;height:36px;border-radius:4px}
+.file-picker-delete-btn:hover{background:rgba(22,21,19,0.08)}
+

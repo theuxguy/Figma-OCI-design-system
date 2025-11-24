@@ -1,10 +1,10 @@
 import React from 'react'
-import DataVisualizationWithCode from './pages/DataVisualizationWithCode'
+import FilePickerPage from './pages/FilePickerPage'
 
 export default function App() {
   return (
     <div className="app">
-      <DataVisualizationWithCode />
+      <FilePickerPage />
     </div>
   )
 }
