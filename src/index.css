@@ -46,3 +46,7 @@ body{
 
 .axis-label{font-size:12px;color:var(--text-secondary)}
 
+.card-list{display:flex;flex-direction:column;gap:16px}
+.add-button{background:#0ea5a4;color:#fff;border:0;padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600}
+.add-button:hover{opacity:0.95}
+

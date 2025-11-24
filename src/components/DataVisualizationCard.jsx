@@ -2,12 +2,17 @@ import React from 'react'
 import GroupedBarChart from './Chart'
 import FilterChips from './FilterChips'
 
-export default function DataVisualizationCard({ title, series, labels, filters }) {
+export default function DataVisualizationCard({ title, series, labels, filters, onRemove }) {
   return (
     <div className="card">
       <div className="card-header">
         <h3 className="card-title">{title}</h3>
-        <div className="card-actions">…</div>
+        <div className="card-actions">
+          {onRemove && (
+            <button aria-label="Remove card" onClick={onRemove} style={{background:'transparent',border:0,cursor:'pointer',fontSize:18,lineHeight:1}}>✕</button>
+          )}
+          {!onRemove && <span>…</span>}
+        </div>
       </div>
 
       <FilterChips filters={filters} />
