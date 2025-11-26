@@ -85,3 +85,39 @@ body{
 .file-picker-delete-btn{background:transparent;border:0;color:var(--text-primary);cursor:pointer;font-size:18px;padding:8px;width:36px;height:36px;border-radius:4px}
 .file-picker-delete-btn:hover{background:rgba(22,21,19,0.08)}
 
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--radius-md);padding:10px 16px;font-weight:600;border:1px solid transparent;cursor:pointer;background:var(--surface);color:var(--text-primary);transition:all 0.12s ease}
+.btn:focus{outline:2px solid rgba(14,165,164,0.16);outline-offset:2px}
+.btn--size-sm{padding:6px 10px;font-size:13px;border-radius:4px}
+.btn--size-md{padding:10px 16px;font-size:14px}
+.btn--size-lg{padding:12px 20px;font-size:16px}
+
+/* themes */
+.btn--theme-default{background:var(--surface);color:var(--text-primary);border-color:var(--border-divider)}
+.btn--theme-primary{background:var(--dvt-3);color:#fff;border-color:transparent}
+.btn--theme-secondary{background:var(--dvt-2);color:#fff;border-color:transparent}
+.btn--theme-danger{background:#d9534f;color:#fff;border-color:transparent}
+
+/* appearances */
+.btn--solid{ /* default handled by theme */ }
+.btn--outline{background:transparent;color:var(--text-primary);border-color:var(--border-enabled)}
+.btn--ghost{background:transparent;color:var(--text-primary);border-color:transparent}
+.btn--link{background:transparent;color:var(--dvt-3);border-color:transparent;padding:0}
+
+.btn:hover{transform:translateY(-1px)}
+.btn--outline:hover{background:rgba(22,21,19,0.04)}
+.btn--ghost:hover{background:rgba(22,21,19,0.04)}
+.btn--link:hover{text-decoration:underline}
+
+.btn--disabled, .btn[disabled]{opacity:0.5;cursor:not-allowed;transform:none}
+
+/* loading spinner */
+.btn__spinner{width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,0.4);border-top-color:rgba(255,255,255,0.9);animation:btn-spin 0.7s linear infinite;margin-right:6px}
+.btn--theme-default .btn__spinner{border-color:rgba(22,21,19,0.12);border-top-color:rgba(22,21,19,0.6)}
+
+@keyframes btn-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.btn__icon{display:inline-flex;align-items:center}
+.btn__icon--left{margin-right:4px}
+.btn__icon--right{margin-left:4px}
+

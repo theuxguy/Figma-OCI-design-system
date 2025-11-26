@@ -1,10 +1,10 @@
 import React from 'react'
-import FilePickerPage from './pages/FilePickerPage'
+import ButtonDemo from './pages/ButtonDemo'
 
 export default function App() {
   return (
     <div className="app">
-      <FilePickerPage />
+      <ButtonDemo />
     </div>
   )
 }
