@@ -2,9 +2,9 @@ import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import ButtonDemo from './pages/ButtonDemo'
-import DataVisualizationRuleBuilder from './composites/DataVisualizationRuleBuilder'
+import DataVisualizationRuleBuilder from './pages/DataVisualizationRuleBuilder'
 import InputCodePage from './composites/InputCode'
-import FilePickerPage from './composites/FilePickerPage'
+import FilePickerPage from './pages/FilePickerPage'
 import CreateTemplateSinglePage from './Templates/CreateTemplateSinglePage'
 
 export default function App() {
