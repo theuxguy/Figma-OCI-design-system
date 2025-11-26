@@ -3,7 +3,7 @@ import React from 'react'
 /**
  * Button component supporting theme, appearance, size and states.
  * Props:
- * - theme: 'default'|'primary'|'secondary'|'danger' (controls color)
+ * - theme: 'default'|'primary'|'danger' (controls color)
  * - appearance: 'solid'|'outline'|'ghost'|'link'
  * - size: 'sm'|'md'|'lg'
  * - loading: boolean
@@ -19,17 +19,22 @@ export default function Button({
   disabled = false,
   iconLeft = null,
   iconRight = null,
+  iconOnly = false,
   children,
   className = '',
   ...rest
 }) {
+  // Normalize theme: map any deprecated/unknown theme (e.g. 'secondary') to 'default'
+  const normalizedTheme = ['default', 'primary', 'danger'].includes(theme) ? theme : 'default'
+
   const classes = [
     'btn',
-    `btn--theme-${theme}`,
+    `btn--theme-${normalizedTheme}`,
     `btn--${appearance}`,
     `btn--size-${size}`,
     loading ? 'btn--loading' : '',
     disabled ? 'btn--disabled' : '',
+    iconOnly ? 'btn--icon-only' : '',
     className
   ]
 
@@ -42,7 +47,7 @@ export default function Button({
     >
       {loading && <span className="btn__spinner" aria-hidden />}
       {iconLeft && <span className="btn__icon btn__icon--left">{iconLeft}</span>}
-      <span className="btn__content">{children}</span>
+      {!iconOnly && <span className="btn__content">{children}</span>}
       {iconRight && <span className="btn__icon btn__icon--right">{iconRight}</span>}
     </button>
   )
