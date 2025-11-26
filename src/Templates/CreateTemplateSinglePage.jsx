@@ -54,9 +54,9 @@ export default function CreateTemplateSinglePage() {
 
       <footer className="template-footer" aria-label="Actions">
         <div className="template-footer__actions">
-          <Button appearance="borderless">Cancel</Button>
-          <Button appearance="outline">Secondary</Button>
-          <Button appearance="cta" theme="primary">Primary</Button>
+          <Button appearance="ghost" theme="default">Cancel</Button>
+          <Button appearance="outline" theme="default">Secondary</Button>
+          <Button appearance="solid" theme="primary">Primary</Button>
         </div>
       </footer>
     </div>
