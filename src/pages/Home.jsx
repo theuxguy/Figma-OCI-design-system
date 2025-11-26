@@ -10,8 +10,9 @@ export default function Home() {
       <ul style={{fontSize: 18, marginTop: 24}}>
         <li><a href="/button-demo">Buttons</a></li>
         <li><a href="/data-visualization-rule-builder">Data Visualization Rule Builder</a></li>
-        <li><a href="/data-visualization-with-code">Input Code</a></li>
+        <li><a href="/input-code">Input Code</a></li>
         <li><a href="/file-picker">File Picker</a></li>
+        <li><a href="/create-template">Create Template (Single Page)</a></li>
       </ul>
     </div>
   )

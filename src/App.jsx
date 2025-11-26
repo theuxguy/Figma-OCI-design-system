@@ -5,6 +5,7 @@ import ButtonDemo from './pages/ButtonDemo'
 import DataVisualizationRuleBuilder from './pages/DataVisualizationRuleBuilder'
 import InputCodePage from './pages/InputCode'
 import FilePickerPage from './pages/FilePickerPage'
+import CreateTemplateSinglePage from './Templates/CreateTemplateSinglePage'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Link to="/data-visualization-rule-builder">Data Visualization Rule Builder</Link>
           <Link to="/input-code">Input Code Demo</Link>
           <Link to="/file-picker">File Picker Demo</Link>
+          <Link to="/create-template">Create Template</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,6 +25,7 @@ export default function App() {
           <Route path="/data-visualization-rule-builder" element={<DataVisualizationRuleBuilder />} />
           <Route path="/input-code" element={<InputCodePage />} />
           <Route path="/file-picker" element={<FilePickerPage />} />
+          <Route path="/create-template" element={<CreateTemplateSinglePage />} />
         </Routes>
       </div>
     </BrowserRouter>
