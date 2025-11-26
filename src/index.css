@@ -148,13 +148,13 @@ body{
 .template-heading-description{font-size:18px;line-height:24px;margin:0;color:var(--text-primary)}
 .template-section-intro{padding:32px 48px 0 48px}
 .template-section-title{font-size:20px;font-weight:700;line-height:28px;margin:0;color:var(--text-primary)}
-.template-main{padding:24px 48px 48px 48px;display:flex;flex-direction:column;gap:32px;background:var(--surface)}
+.template-main{padding:24px 48px 48px 48px;display:flex;flex-direction:column;gap:32px;background:var(--page-neutral-10)}
 .template-wizard-header{display:flex;flex-direction:column;gap:8px}
 .template-heading-wizard{font-size:32px;font-weight:700;line-height:40px;margin:0;color:var(--text-primary)}
 .template-wizard-description{font-size:13.75px;line-height:16px;margin:0;color:var(--text-primary)}
 .template-prose p{margin:0;font-size:16px;line-height:20px;color:var(--text-primary)}
 .template-link{color:#00688c;text-decoration:underline}
-.template-fieldset{display:flex;flex-direction:column;gap:16px;padding:24px;border:1px solid var(--border-divider);border-radius:var(--radius-lg);background:var(--surface-neutral-30)}
+.template-fieldset{display:flex;flex-direction:column;gap:16px;padding:24px;border:0;border-radius:var(--radius-lg);background:transparent}
 .template-fieldset__header{display:flex;flex-direction:column;gap:4px}
 .template-fieldset__title{margin:0;font-size:28px;font-weight:700;line-height:36px;color:var(--text-primary)}
 .template-fieldset__description{margin:0;font-size:16px;line-height:20px;color:var(--text-primary)}
