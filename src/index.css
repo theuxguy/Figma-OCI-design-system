@@ -11,6 +11,8 @@
   --dvt-2: #d7790f;
   --dvt-3: #31a09c;
   --dvt-4: #4e4137;
+  --btn-cta: #312d2a;
+  --btn-danger: #b3311f;
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 8px;
@@ -22,7 +24,7 @@ body{
   background: var(--bg);
   color: var(--fg);
 }
-.app{max-width:900px;margin:40px auto;background:#fff;padding:24px;border-radius:8px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.app{max-width:1400px;margin:40px auto;background:#fff;padding:24px;border-radius:8px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
 
 /* Component layout for visualization page */
 .top-row{display:flex;gap:12px;align-items:center;margin-bottom:16px}
@@ -94,9 +96,9 @@ body{
 
 /* themes */
 .btn--theme-default{background:var(--surface);color:var(--text-primary);border-color:var(--border-divider)}
-.btn--theme-primary{background:var(--dvt-3);color:#fff;border-color:transparent}
-.btn--theme-secondary{background:var(--dvt-2);color:#fff;border-color:transparent}
-.btn--theme-danger{background:#d9534f;color:#fff;border-color:transparent}
+.btn--theme-default.btn--solid{background:rgba(22,21,19,0.08)}
+.btn--theme-primary{background:var(--btn-cta);color:#fff;border-color:transparent}
+.btn--theme-danger{background:var(--btn-danger);color:#fff;border-color:transparent}
 
 /* appearances */
 .btn--solid{ /* default handled by theme */ }
@@ -105,9 +107,15 @@ body{
 .btn--link{background:transparent;color:var(--dvt-3);border-color:transparent;padding:0}
 
 .btn:hover{transform:translateY(-1px)}
+.btn--theme-default.btn--solid:hover{background:rgba(22,21,19,0.12);transform:translateY(-1px)}
+.btn--theme-default.btn--solid:active{background:rgba(22,21,19,0.16);transform:translateY(0)}
 .btn--outline:hover{background:rgba(22,21,19,0.04)}
 .btn--ghost:hover{background:rgba(22,21,19,0.04)}
 .btn--link:hover{text-decoration:underline}
+
+/* Simulated states (for demo) */
+.btn--hover{filter:brightness(0.95);transform:none}
+.btn--active{filter:brightness(0.9);transform:none}
 
 .btn--disabled, .btn[disabled]{opacity:0.5;cursor:not-allowed;transform:none}
 
@@ -120,4 +128,12 @@ body{
 .btn__icon{display:inline-flex;align-items:center}
 .btn__icon--left{margin-right:4px}
 .btn__icon--right{margin-left:4px}
+
+/* Icon-only button (square) */
+.btn--icon-only{padding:8px; width: auto; height: auto}
+.btn--icon-only.btn--size-sm{padding:6px;width:36px;height:36px}
+.btn--icon-only.btn--size-md{padding:8px;width:44px;height:44px}
+.btn--icon-only.btn--size-lg{padding:10px;width:52px;height:52px}
+.btn--icon-only .btn__content{display:none}
+.btn--icon-only .btn__icon{margin:0}
 
