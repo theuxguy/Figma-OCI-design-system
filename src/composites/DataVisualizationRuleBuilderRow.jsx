@@ -1,5 +1,5 @@
 import React from 'react'
-import GroupedBarChart from '../composites/Chart'
+import GroupedBarChart from './Chart'
 
 export default function DataVisualizationRuleBuilderRow({
   order = 1,

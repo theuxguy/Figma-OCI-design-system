@@ -1,5 +1,5 @@
 import React from 'react'
-import FilePicker from '../components/FilePicker'
+import FilePicker from '../composites/FilePicker'
 
 export default function FilePickerPage() {
   const handleFilesSelected = (files) => {

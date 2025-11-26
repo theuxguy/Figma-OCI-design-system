@@ -1,6 +1,6 @@
 import React from 'react'
-import DataVisualizationRuleBuilderRow from '../components/DataVisualizationRuleBuilderRow'
-import InputCode from '../components/InputCode'
+import DataVisualizationRuleBuilderRow from '../composites/DataVisualizationRuleBuilderRow'
+import InputCode from '../composites/InputCodeComponent'
 
 const sampleSeries = [
   { name: 'Series 1', color: 'var(--dvt-1)', values: [45, 46, 47, 46] },
@@ -14,6 +14,9 @@ const labels = ['Q1', 'Q2', 'Q3', 'Q4']
 export default function InputCodePage() {
   return (
     <div style={{ padding: 16 }}>
+      <div style={{ marginBottom: 18 }}>
+        <DataVisualizationRuleBuilderRow order={1} fieldLabel="Resource" fieldValue="Instance" series={sampleSeries} labels={labels} onRemove={null} />
+      </div>
 
       <div style={{ marginTop: 24 }}>
         <InputCode

@@ -30,9 +30,7 @@ export default function FilePicker({
     e.preventDefault()
     e.stopPropagation()
     setDragActive(false)
-    // Handle dropped files
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      // You can process files here
       if (onFilesSelected) {
         onFilesSelected(e.dataTransfer.files)
       }
@@ -57,7 +55,6 @@ export default function FilePicker({
 
   return (
     <div className="file-picker">
-      {/* Label and description */}
       <div className="file-picker-header">
         <div>
           <p className="file-picker-label">{label}</p>
@@ -68,7 +65,6 @@ export default function FilePicker({
         </div>
       </div>
 
-      {/* File drop zone */}
       <input
         type="file"
         id="file-input"
@@ -90,7 +86,6 @@ export default function FilePicker({
         </div>
       </label>
 
-      {/* Files queued section */}
       {files.length > 0 && (
         <div className="file-picker-files">
           <div className="file-picker-files-header">
