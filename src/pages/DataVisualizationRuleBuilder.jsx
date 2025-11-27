@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import DataVisualizationRuleBuilderRow from '../composites/DataVisualizationRuleBuilderRow'
+import Button from '../components/button'
+import IconPlus from '../components/icons/Plus'
 
 const sampleSeries = [
   { name: 'Series 1', color: 'var(--dvt-1)', values: [45, 46, 47, 46] },
@@ -42,7 +44,15 @@ export default function DataVisualizationRuleBuilder() {
         ))}
 
         <div style={{marginTop: 12}}>
-          <button className="add-button" onClick={addRow}>+ Add</button>
+          <Button
+            theme="default"
+            appearance="solid"
+            size="md"
+            iconLeft={<IconPlus />}
+            onClick={addRow}
+          >
+            Add
+          </Button>
         </div>
       </div>
     </div>

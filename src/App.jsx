@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './composites/Home'
 import ButtonDemo from './pages/ButtonDemo'
 import DataVisualizationRuleBuilder from './pages/DataVisualizationRuleBuilder'
 import InputCodePage from './composites/InputCode'
