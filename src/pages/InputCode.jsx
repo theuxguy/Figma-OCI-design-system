@@ -1,6 +1,6 @@
 import React from 'react'
-import DataVisualizationRuleBuilderRow from './DataVisualizationRuleBuilderRow'
-import InputCode from './InputCodeComponent'
+import DataVisualizationRuleBuilderRow from '../composites/DataVisualizationRuleBuilderRow'
+import InputCode from '../composites/InputCodeComponent'
 
 const sampleSeries = [
   { name: 'Series 1', color: 'var(--dvt-1)', values: [45, 46, 47, 46] },

@@ -9,6 +9,7 @@ export default function Home() {
       <h3>Components</h3>
       <ul style={{fontSize: 18, marginTop: 24}}>
         <li><a href="/button-demo">Buttons</a></li>
+        <li><a href="/input-demo">Input - Text</a></li>
         <li><a href="/data-visualization-rule-builder">Data Visualization Rule Builder</a></li>
         <li><a href="/input-code">Input Code</a></li>
         <li><a href="/file-picker">File Picker</a></li>
